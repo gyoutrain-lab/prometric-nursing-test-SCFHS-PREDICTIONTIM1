@@ -99,24 +99,6 @@ input, button {
 // ================= QUESTIONS =================
 const questions = [
 {
-  q: "An elderly patient becomes dizzy when moved from lying to standing position. BP drops from 130/78 to 96/60. What should the nurse technician do FIRST?",
-  options: [
-    { text: "Assist the patient back to a sitting position", tag: "SCFHS" },
-    { text: "Encourage oral fluid intake", tag: "NCLEX" },
-    { text: "Document orthostatic hypotension", tag: "SAFE_DELAY" },
-    { text: "Notify the healthcare provider", tag: "STR" }
-  ],
-  correctTag: "SCFHS",
-  rationale: {
-    correct: "Immediate positioning prevents falls and injury caused by acute postural hypotension.",
-    distractors: {
-      NCLEX: "Hydration does not resolve immediate instability.",
-      SAFE_DELAY: "Documentation does not protect patient safety.",
-      STR: "Escalation follows stabilization."
-    }
-  }
-},
-{
   q: "1. A 43-year-old African American male is admitted with sickle cell anemia. The nurse plans to assess circulation in the lower extremities every two hours. Which of the following outcome criteria would the nurse use?",
   options: [
     { text: "Body temperature of 99°F or less", tag: "SAFE_DELAY" },
@@ -221,6 +203,1716 @@ const questions = [
       NCLEX: "Clamping tubes can cause tension and worsen cardiac output.",
       SAFE_DELAY: "Documentation alone delays treatment.",
       STR: "Fluids without escalation are insufficient."
+    }
+  }
+},
+{
+  q: "6. A client with sickle cell disease reports severe chest pain, fever, and shortness of breath. Which complication does the nurse suspect?",
+  options: [
+    { text: "Pulmonary embolism", tag: "STR" },
+    { text: "Acute chest syndrome", tag: "SCFHS" },
+    { text: "Myocardial infarction", tag: "NCLEX" },
+    { text: "Pneumonia", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Acute chest syndrome is a life-threatening complication of sickle cell disease characterized by chest pain, fever, and respiratory distress.",
+    distractors: {
+      STR: "Pulmonary embolism is less common and not disease-specific.",
+      NCLEX: "MI is possible but not the most likely in sickle cell disease.",
+      SAFE_DELAY: "Pneumonia may occur but acute chest syndrome is priority."
+    }
+  }
+},
+{
+  q: "7. A nurse is caring for a client with sickle cell disease receiving IV morphine. Which assessment is most critical?",
+  options: [
+    { text: "Urine output", tag: "STR" },
+    { text: "Respiratory rate", tag: "SCFHS" },
+    { text: "Blood pressure", tag: "NCLEX" },
+    { text: "Pain scale every 4 hours", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Opioids depress respiration; monitoring respiratory rate prevents life-threatening complications.",
+    distractors: {
+      STR: "Urine output is important but not the most immediate risk.",
+      NCLEX: "Blood pressure changes are secondary.",
+      SAFE_DELAY: "Pain reassessment should not delay safety monitoring."
+    }
+  }
+},
+{
+  q: "8. A child with sickle cell disease is admitted for fever. What is the nurse’s FIRST action?",
+  options: [
+    { text: "Administer antipyretics", tag: "NCLEX" },
+    { text: "Obtain blood cultures", tag: "SCFHS" },
+    { text: "Apply cooling blanket", tag: "SAFE_DELAY" },
+    { text: "Encourage oral fluids", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Children with sickle cell disease are highly susceptible to sepsis; blood cultures must be obtained promptly.",
+    distractors: {
+      NCLEX: "Antipyretics may mask infection.",
+      SAFE_DELAY: "Cooling does not address infection risk.",
+      STR: "Fluids are supportive but not priority."
+    }
+  }
+},
+{
+  q: "9. A client with sickle cell disease asks why hydration is important. Which explanation by the nurse is correct?",
+  options: [
+    { text: "It prevents hemoglobin breakdown", tag: "SAFE_DELAY" },
+    { text: "It decreases blood viscosity", tag: "SCFHS" },
+    { text: "It increases red blood cell lifespan", tag: "STR" },
+    { text: "It eliminates pain immediately", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Hydration reduces blood viscosity, decreasing red blood cell sickling.",
+    distractors: {
+      SAFE_DELAY: "Hydration does not stop hemoglobin breakdown.",
+      STR: "RBC lifespan is genetically determined.",
+      NCLEX: "Pain relief is indirect, not immediate."
+    }
+  }
+},
+{
+  q: "10. A nurse is preparing discharge teaching for a client with sickle cell disease. Which instruction is most important?",
+  options: [
+    { text: "Avoid cold environments", tag: "SCFHS" },
+    { text: "Limit fluid intake at night", tag: "SAFE_DELAY" },
+    { text: "Avoid moderate exercise", tag: "STR" },
+    { text: "Take iron supplements daily", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Cold exposure causes vasoconstriction and can trigger sickling crises.",
+    distractors: {
+      SAFE_DELAY: "Fluid restriction increases risk of crisis.",
+      STR: "Moderate exercise is beneficial.",
+      NCLEX: "Iron supplementation is not routinely indicated."
+    }
+  }
+},
+{
+  q: "11. A client with sickle cell disease has splenic sequestration. Which finding supports this diagnosis?",
+  options: [
+    { text: "Bradycardia", tag: "SAFE_DELAY" },
+    { text: "Sudden drop in hemoglobin", tag: "SCFHS" },
+    { text: "Hypertension", tag: "STR" },
+    { text: "Elevated platelet count", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Splenic sequestration causes acute pooling of blood in the spleen leading to rapid hemoglobin decrease.",
+    distractors: {
+      SAFE_DELAY: "Bradycardia is not typical.",
+      STR: "Hypertension is not expected.",
+      NCLEX: "Platelets are not diagnostic."
+    }
+  }
+},
+{
+  q: "12. Which vaccine is most important for a child with sickle cell disease?",
+  options: [
+    { text: "Influenza", tag: "NCLEX" },
+    { text: "Pneumococcal", tag: "SCFHS" },
+    { text: "Hepatitis A", tag: "STR" },
+    { text: "Varicella", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Functional asplenia increases risk for pneumococcal infections.",
+    distractors: {
+      NCLEX: "Influenza is important but secondary.",
+      STR: "Hepatitis A is not high priority.",
+      SAFE_DELAY: "Varicella is routine but not critical."
+    }
+  }
+},
+{
+  q: "13. A client in sickle cell crisis is receiving IV fluids. Which lab value best evaluates effectiveness?",
+  options: [
+    { text: "Hematocrit", tag: "SCFHS" },
+    { text: "White blood cell count", tag: "STR" },
+    { text: "Platelet count", tag: "SAFE_DELAY" },
+    { text: "Serum potassium", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Improved hydration reduces hemoconcentration, reflected in hematocrit levels.",
+    distractors: {
+      STR: "WBC reflects infection or stress.",
+      SAFE_DELAY: "Platelets do not indicate hydration.",
+      NCLEX: "Potassium is unrelated to sickling."
+    }
+  }
+},
+{
+  q: "14. Which pain medication order should the nurse question for a client in sickle cell crisis?",
+  options: [
+    { text: "Morphine IV", tag: "NCLEX" },
+    { text: "Hydromorphone IV", tag: "STR" },
+    { text: "Meperidine IV", tag: "SCFHS" },
+    { text: "Patient-controlled analgesia", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Meperidine increases risk of seizures and is not recommended for sickle cell pain management.",
+    distractors: {
+      NCLEX: "Morphine is appropriate.",
+      STR: "Hydromorphone is effective.",
+      SAFE_DELAY: "PCA supports pain control."
+    }
+  }
+},
+{
+  q: "15. A nurse evaluates teaching for a client with sickle cell disease. Which statement indicates correct understanding?",
+  options: [
+    { text: "I should drink plenty of fluids every day", tag: "SCFHS" },
+    { text: "I should avoid all physical activity", tag: "SAFE_DELAY" },
+    { text: "Pain means I should stop medications", tag: "STR" },
+    { text: "I only need care during a crisis", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Consistent hydration is essential to prevent sickling episodes.",
+    distractors: {
+      SAFE_DELAY: "Activity should be balanced, not avoided.",
+      STR: "Medications should continue as prescribed.",
+      NCLEX: "Ongoing care is required."
+    }
+  }
+},
+{
+  q: "16. A client with sickle cell disease develops sudden weakness on one side of the body. What complication does the nurse suspect?",
+  options: [
+    { text: "Hypoglycemia", tag: "SAFE_DELAY" },
+    { text: "Cerebrovascular accident (stroke)", tag: "SCFHS" },
+    { text: "Transient ischemic attack", tag: "NCLEX" },
+    { text: "Seizure disorder", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Sickle cell disease increases risk for ischemic stroke due to vaso-occlusion.",
+    distractors: {
+      SAFE_DELAY: "Hypoglycemia presents differently.",
+      NCLEX: "TIA symptoms resolve quickly.",
+      STR: "No seizure activity is described."
+    }
+  }
+},
+{
+  q: "17. Which laboratory finding is expected in a client with sickle cell disease?",
+  options: [
+    { text: "Elevated hemoglobin", tag: "SAFE_DELAY" },
+    { text: "Decreased reticulocyte count", tag: "STR" },
+    { text: "Elevated reticulocyte count", tag: "SCFHS" },
+    { text: "Normal bilirubin", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Chronic hemolysis stimulates bone marrow to produce more reticulocytes.",
+    distractors: {
+      SAFE_DELAY: "Hemoglobin is typically decreased.",
+      STR: "Reticulocytes are increased, not decreased.",
+      NCLEX: "Bilirubin is often elevated."
+    }
+  }
+},
+{
+  q: "18. A client with sickle cell disease is scheduled for a blood transfusion. Which assessment is PRIORITY?",
+  options: [
+    { text: "Vital signs", tag: "SCFHS" },
+    { text: "Pain score", tag: "NCLEX" },
+    { text: "Urine specific gravity", tag: "STR" },
+    { text: "Dietary intake", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Baseline vital signs are essential to identify transfusion reactions.",
+    distractors: {
+      NCLEX: "Pain assessment is secondary.",
+      STR: "Urine concentration is not priority.",
+      SAFE_DELAY: "Nutrition is unrelated."
+    }
+  }
+},
+{
+  q: "19. Which finding indicates a transfusion reaction in a client with sickle cell disease?",
+  options: [
+    { text: "Decreased pain", tag: "SAFE_DELAY" },
+    { text: "Chills and fever", tag: "SCFHS" },
+    { text: "Improved oxygen saturation", tag: "STR" },
+    { text: "Increased appetite", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Fever and chills are classic signs of acute transfusion reaction.",
+    distractors: {
+      SAFE_DELAY: "Pain reduction is expected.",
+      STR: "Improved oxygenation is therapeutic.",
+      NCLEX: "Appetite changes are unrelated."
+    }
+  }
+},
+{
+  q: "20. A nurse is caring for a client with sickle cell disease experiencing priapism. What is the priority nursing action?",
+  options: [
+    { text: "Apply ice packs", tag: "SAFE_DELAY" },
+    { text: "Encourage oral fluids", tag: "NCLEX" },
+    { text: "Notify the healthcare provider immediately", tag: "SCFHS" },
+    { text: "Document and reassess in 1 hour", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Priapism can lead to permanent erectile dysfunction and requires urgent intervention.",
+    distractors: {
+      SAFE_DELAY: "Ice may worsen vasoconstriction.",
+      NCLEX: "Fluids alone are insufficient.",
+      STR: "Delay risks tissue damage."
+    }
+  }
+},
+{
+  q: "21. Which assessment finding indicates effective pain control in a client with sickle cell crisis?",
+  options: [
+    { text: "Stable vital signs", tag: "STR" },
+    { text: "Client reports pain score of 2/10", tag: "SCFHS" },
+    { text: "Client sleeping continuously", tag: "SAFE_DELAY" },
+    { text: "Decreased reticulocyte count", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Pain is subjective; client report is the most reliable indicator.",
+    distractors: {
+      STR: "Vitals may not correlate with pain.",
+      SAFE_DELAY: "Sleeping may indicate sedation.",
+      NCLEX: "Reticulocytes do not reflect pain."
+    }
+  }
+},
+{
+  q: "22. A client with sickle cell disease asks about genetic transmission. How is sickle cell disease inherited?",
+  options: [
+    { text: "Autosomal dominant", tag: "SAFE_DELAY" },
+    { text: "X-linked recessive", tag: "STR" },
+    { text: "Autosomal recessive", tag: "SCFHS" },
+    { text: "Multifactorial", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Both parents must carry the sickle cell gene for the disease to occur.",
+    distractors: {
+      SAFE_DELAY: "Not dominant.",
+      STR: "Not sex-linked.",
+      NCLEX: "Not multifactorial."
+    }
+  }
+},
+{
+  q: "23. Which situation is MOST likely to trigger a sickle cell crisis?",
+  options: [
+    { text: "Dehydration", tag: "SCFHS" },
+    { text: "High-calorie diet", tag: "SAFE_DELAY" },
+    { text: "Adequate rest", tag: "STR" },
+    { text: "Routine vaccination", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Dehydration increases blood viscosity and promotes sickling.",
+    distractors: {
+      SAFE_DELAY: "Nutrition does not trigger crisis.",
+      STR: "Rest is protective.",
+      NCLEX: "Vaccines prevent infection."
+    }
+  }
+},
+{
+  q: "24. A client with sickle cell disease has chronic anemia. Which adaptation does the nurse expect?",
+  options: [
+    { text: "Bradycardia", tag: "SAFE_DELAY" },
+    { text: "Increased cardiac output", tag: "SCFHS" },
+    { text: "Hypotension", tag: "STR" },
+    { text: "Decreased oxygen demand", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "The heart compensates for anemia by increasing cardiac output.",
+    distractors: {
+      SAFE_DELAY: "Heart rate usually increases.",
+      STR: "Blood pressure may remain normal.",
+      NCLEX: "Oxygen demand does not decrease."
+    }
+  }
+},
+{
+  q: "25. Which discharge instruction is MOST important to prevent infection in a client with sickle cell disease?",
+  options: [
+    { text: "Avoid crowds during peak illness seasons", tag: "SCFHS" },
+    { text: "Limit physical activity", tag: "SAFE_DELAY" },
+    { text: "Follow a high-fat diet", tag: "STR" },
+    { text: "Check blood pressure weekly", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Clients with functional asplenia are highly susceptible to infections.",
+    distractors: {
+      SAFE_DELAY: "Activity should be balanced.",
+      STR: "Diet choice is unrelated.",
+      NCLEX: "BP monitoring does not prevent infection."
+    }
+  }
+},
+{
+  q: "26. A nurse is caring for a client with sickle cell disease who reports increasing fatigue. Which laboratory value best explains this finding?",
+  options: [
+    { text: "Decreased hemoglobin", tag: "SCFHS" },
+    { text: "Elevated white blood cells", tag: "NCLEX" },
+    { text: "Increased platelets", tag: "STR" },
+    { text: "Decreased sodium", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Chronic hemolytic anemia leads to low hemoglobin, causing fatigue.",
+    distractors: {
+      NCLEX: "WBC elevation suggests infection.",
+      STR: "Platelets do not explain fatigue.",
+      SAFE_DELAY: "Sodium imbalance is unrelated."
+    }
+  }
+},
+{
+  q: "27. Which assessment finding in a client with sickle cell disease requires immediate intervention?",
+  options: [
+    { text: "Pain rating of 8/10", tag: "NCLEX" },
+    { text: "Oxygen saturation of 88%", tag: "SCFHS" },
+    { text: "Heart rate of 104 bpm", tag: "STR" },
+    { text: "Hemoglobin of 9 g/dL", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Hypoxia triggers sickling and is immediately life-threatening.",
+    distractors: {
+      NCLEX: "Pain is expected during crisis.",
+      STR: "Mild tachycardia is compensatory.",
+      SAFE_DELAY: "Chronic anemia is expected."
+    }
+  }
+},
+{
+  q: "28. A nurse is teaching a client with sickle cell disease about preventing vaso-occlusive crisis. Which statement indicates understanding?",
+  options: [
+    { text: "I will drink fluids throughout the day", tag: "SCFHS" },
+    { text: "I will restrict fluids at night", tag: "SAFE_DELAY" },
+    { text: "I will avoid all exercise", tag: "STR" },
+    { text: "I will take iron daily", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Adequate hydration prevents hemoconcentration and sickling.",
+    distractors: {
+      SAFE_DELAY: "Fluid restriction increases risk.",
+      STR: "Moderate exercise is allowed.",
+      NCLEX: "Iron is not routinely required."
+    }
+  }
+},
+{
+  q: "29. A child with sickle cell disease presents with fever and lethargy. What is the nurse’s priority concern?",
+  options: [
+    { text: "Sepsis", tag: "SCFHS" },
+    { text: "Dehydration", tag: "NCLEX" },
+    { text: "Pain crisis", tag: "STR" },
+    { text: "Iron deficiency", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Functional asplenia places children at high risk for life-threatening infections.",
+    distractors: {
+      NCLEX: "Dehydration is secondary.",
+      STR: "Pain is not the presenting issue.",
+      SAFE_DELAY: "Iron deficiency is chronic."
+    }
+  }
+},
+{
+  q: "30. Which nursing intervention is MOST effective in preventing sickle cell complications during hospitalization?",
+  options: [
+    { text: "Maintaining adequate hydration", tag: "SCFHS" },
+    { text: "Limiting ambulation", tag: "SAFE_DELAY" },
+    { text: "Restricting visitors", tag: "STR" },
+    { text: "Administering iron supplements", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Hydration decreases blood viscosity and reduces sickling episodes.",
+    distractors: {
+      SAFE_DELAY: "Immobility increases complications.",
+      STR: "Visitors do not affect sickling.",
+      NCLEX: "Iron is not routinely indicated."
+    }
+  }
+},
+{
+  q: "31. A nurse is monitoring a client with sickle cell disease for acute chest syndrome. Which assessment is PRIORITY?",
+  options: [
+    { text: "Oxygen saturation", tag: "SCFHS" },
+    { text: "Pain level", tag: "NCLEX" },
+    { text: "Bowel sounds", tag: "SAFE_DELAY" },
+    { text: "Peripheral edema", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Acute chest syndrome compromises oxygenation and can be fatal.",
+    distractors: {
+      NCLEX: "Pain assessment is secondary.",
+      SAFE_DELAY: "GI function is unrelated.",
+      STR: "Edema is not a key indicator."
+    }
+  }
+},
+{
+  q: "32. Which medication order should the nurse anticipate for a client with sickle cell disease to reduce crisis frequency?",
+  options: [
+    { text: "Hydroxyurea", tag: "SCFHS" },
+    { text: "Ferrous sulfate", tag: "NCLEX" },
+    { text: "Warfarin", tag: "STR" },
+    { text: "Furosemide", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Hydroxyurea increases fetal hemoglobin, reducing sickling.",
+    distractors: {
+      NCLEX: "Iron is not indicated.",
+      STR: "Anticoagulants do not prevent crisis.",
+      SAFE_DELAY: "Diuretics increase dehydration risk."
+    }
+  }
+},
+{
+  q: "33. A client with sickle cell disease reports dark urine. What is the most likely cause?",
+  options: [
+    { text: "Hemolysis", tag: "SCFHS" },
+    { text: "Dehydration", tag: "NCLEX" },
+    { text: "Urinary infection", tag: "STR" },
+    { text: "Renal stones", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Hemolysis releases hemoglobin, darkening urine.",
+    distractors: {
+      NCLEX: "Dehydration concentrates urine but does not cause hemoglobinuria.",
+      STR: "UTI presents with dysuria.",
+      SAFE_DELAY: "Stones cause flank pain."
+    }
+  }
+},
+{
+  q: "34. Which finding indicates improvement in a client recovering from sickle cell crisis?",
+  options: [
+    { text: "Oxygen saturation 96%", tag: "SCFHS" },
+    { text: "Reticulocyte count elevated", tag: "STR" },
+    { text: "Hemoglobin unchanged", tag: "SAFE_DELAY" },
+    { text: "White blood cells increased", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Improved oxygenation reduces further sickling.",
+    distractors: {
+      STR: "Reticulocytes reflect compensation.",
+      SAFE_DELAY: "Hemoglobin changes slowly.",
+      NCLEX: "WBC elevation suggests stress or infection."
+    }
+  }
+},
+{
+  q: "35. Which client statement indicates a need for further teaching about sickle cell disease?",
+  options: [
+    { text: "I should avoid dehydration", tag: "STR" },
+    { text: "I need to seek care for fever immediately", tag: "NCLEX" },
+    { text: "Pain crises are expected and manageable", tag: "SAFE_DELAY" },
+    { text: "I only need follow-up care during crises", tag: "SCFHS" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Ongoing monitoring and preventive care are required even without crisis.",
+    distractors: {
+      STR: "Hydration is correct.",
+      NCLEX: "Fever requires urgent care.",
+      SAFE_DELAY: "Pain management is realistic."
+    }
+  }
+},
+{
+  q: "36. A client with sickle cell disease is admitted with a vaso-occlusive crisis. Which factor most likely precipitated this event?",
+  options: [
+    { text: "Exposure to cold weather", tag: "SCFHS" },
+    { text: "High-protein diet", tag: "SAFE_DELAY" },
+    { text: "Routine physical activity", tag: "STR" },
+    { text: "Daily multivitamin use", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Cold exposure causes vasoconstriction, increasing sickling and vaso-occlusion.",
+    distractors: {
+      SAFE_DELAY: "Diet does not trigger sickling.",
+      STR: "Moderate activity is generally safe.",
+      NCLEX: "Vitamins do not cause crises."
+    }
+  }
+},
+{
+  q: "37. A nurse is assessing a client with sickle cell disease for signs of hypoxia. Which finding is most concerning?",
+  options: [
+    { text: "Mild tachycardia", tag: "STR" },
+    { text: "Oxygen saturation of 90%", tag: "SCFHS" },
+    { text: "Fatigue with activity", tag: "SAFE_DELAY" },
+    { text: "Hemoglobin of 9.5 g/dL", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Low oxygen saturation directly contributes to red blood cell sickling and tissue ischemia.",
+    distractors: {
+      STR: "Tachycardia is compensatory.",
+      SAFE_DELAY: "Fatigue is expected in anemia.",
+      NCLEX: "Chronic anemia is baseline."
+    }
+  }
+},
+{
+  q: "38. Which intervention should the nurse include to reduce the risk of infection in a client with sickle cell disease?",
+  options: [
+    { text: "Administer prophylactic antibiotics as prescribed", tag: "SCFHS" },
+    { text: "Encourage iron supplementation", tag: "SAFE_DELAY" },
+    { text: "Limit fluid intake", tag: "STR" },
+    { text: "Restrict all physical activity", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Prophylactic antibiotics reduce infection risk in clients with functional asplenia.",
+    distractors: {
+      SAFE_DELAY: "Iron does not prevent infection.",
+      STR: "Fluid restriction increases risk.",
+      NCLEX: "Activity restriction is unnecessary."
+    }
+  }
+},
+{
+  q: "39. A client with sickle cell disease complains of sudden severe abdominal pain and an enlarged abdomen. What complication does the nurse suspect?",
+  options: [
+    { text: "Splenic sequestration", tag: "SCFHS" },
+    { text: "Appendicitis", tag: "NCLEX" },
+    { text: "Cholecystitis", tag: "STR" },
+    { text: "Gastroenteritis", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Splenic sequestration causes acute abdominal pain and enlargement due to blood pooling.",
+    distractors: {
+      NCLEX: "Appendicitis has localized symptoms.",
+      STR: "Gallbladder disease is chronic.",
+      SAFE_DELAY: "Gastroenteritis presents with diarrhea."
+    }
+  }
+},
+{
+  q: "40. Which assessment finding suggests worsening vaso-occlusive crisis?",
+  options: [
+    { text: "Increasing pain unrelieved by medication", tag: "SCFHS" },
+    { text: "Decreasing heart rate", tag: "SAFE_DELAY" },
+    { text: "Stable hemoglobin level", tag: "STR" },
+    { text: "Improved oxygen saturation", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Escalating pain indicates ongoing tissue ischemia and sickling.",
+    distractors: {
+      SAFE_DELAY: "Heart rate may vary.",
+      STR: "Hemoglobin changes slowly.",
+      NCLEX: "Improved oxygenation is positive."
+    }
+  }
+},
+{
+  q: "41. A nurse is caring for a client with sickle cell disease receiving oxygen therapy. Which outcome indicates effectiveness?",
+  options: [
+    { text: "Oxygen saturation increases to 95%", tag: "SCFHS" },
+    { text: "Pain medication dose reduced", tag: "STR" },
+    { text: "Reticulocyte count decreases", tag: "SAFE_DELAY" },
+    { text: "Hemoglobin level rises immediately", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Improved oxygen saturation reduces further sickling and tissue hypoxia.",
+    distractors: {
+      STR: "Pain reduction may follow later.",
+      SAFE_DELAY: "Reticulocyte changes are delayed.",
+      NCLEX: "Hemoglobin does not rise immediately."
+    }
+  }
+},
+{
+  q: "42. Which teaching point is most important for parents of a child with sickle cell disease?",
+  options: [
+    { text: "Seek immediate care for fever", tag: "SCFHS" },
+    { text: "Limit the child’s physical activity", tag: "SAFE_DELAY" },
+    { text: "Avoid all vaccinations", tag: "STR" },
+    { text: "Give iron supplements daily", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Fever may indicate life-threatening infection due to functional asplenia.",
+    distractors: {
+      SAFE_DELAY: "Activity should be balanced.",
+      STR: "Vaccinations are essential.",
+      NCLEX: "Iron is not routinely required."
+    }
+  }
+},
+{
+  q: "43. A client with sickle cell disease is being evaluated for chronic organ damage. Which organ is most commonly affected?",
+  options: [
+    { text: "Kidneys", tag: "SCFHS" },
+    { text: "Pancreas", tag: "SAFE_DELAY" },
+    { text: "Thyroid", tag: "STR" },
+    { text: "Appendix", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Repeated vaso-occlusion commonly leads to renal damage.",
+    distractors: {
+      SAFE_DELAY: "Pancreatic involvement is uncommon.",
+      STR: "Thyroid disease is unrelated.",
+      NCLEX: "Appendix is not affected."
+    }
+  }
+},
+{
+  q: "44. Which clinical manifestation is associated with chronic hemolysis in sickle cell disease?",
+  options: [
+    { text: "Jaundice", tag: "SCFHS" },
+    { text: "Hypoglycemia", tag: "SAFE_DELAY" },
+    { text: "Bradycardia", tag: "STR" },
+    { text: "Hypertension", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Breakdown of red blood cells increases bilirubin, causing jaundice.",
+    distractors: {
+      SAFE_DELAY: "Glucose levels are unrelated.",
+      STR: "Heart rate is usually elevated.",
+      NCLEX: "Blood pressure is not directly affected."
+    }
+  }
+},
+{
+  q: "45. A nurse is preparing a client with sickle cell disease for discharge. Which goal is the highest priority?",
+  options: [
+    { text: "Prevent future sickle cell crises", tag: "SCFHS" },
+    { text: "Achieve normal hemoglobin levels", tag: "SAFE_DELAY" },
+    { text: "Eliminate need for medications", tag: "STR" },
+    { text: "Resume full physical activity immediately", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Education and preventive strategies reduce morbidity and hospitalization.",
+    distractors: {
+      SAFE_DELAY: "Hemoglobin may remain low.",
+      STR: "Medications are often lifelong.",
+      NCLEX: "Activity should be gradual."
+    }
+  }
+},
+{
+  q: "46. A client with sickle cell disease reports sudden onset of severe headache and blurred vision. What is the nurse’s PRIORITY action?",
+  options: [
+    { text: "Administer prescribed analgesics", tag: "NCLEX" },
+    { text: "Check blood glucose level", tag: "SAFE_DELAY" },
+    { text: "Notify the healthcare provider immediately", tag: "SCFHS" },
+    { text: "Encourage oral fluids", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Neurological symptoms may indicate stroke, a life-threatening complication requiring immediate medical intervention.",
+    distractors: {
+      NCLEX: "Pain control should not delay evaluation.",
+      SAFE_DELAY: "Glucose check does not address the primary risk.",
+      STR: "Hydration is supportive but not urgent."
+    }
+  }
+},
+{
+  q: "47. Which laboratory finding indicates increased hemolysis in a client with sickle cell disease?",
+  options: [
+    { text: "Decreased bilirubin", tag: "SAFE_DELAY" },
+    { text: "Elevated indirect bilirubin", tag: "SCFHS" },
+    { text: "Decreased reticulocyte count", tag: "STR" },
+    { text: "Increased hemoglobin", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Breakdown of red blood cells releases bilirubin, increasing indirect bilirubin levels.",
+    distractors: {
+      SAFE_DELAY: "Bilirubin increases, not decreases.",
+      STR: "Reticulocytes usually rise.",
+      NCLEX: "Hemoglobin is typically low."
+    }
+  }
+},
+{
+  q: "48. A nurse is caring for a client with sickle cell disease who has impaired renal function. Which assessment finding is most concerning?",
+  options: [
+    { text: "Decreased urine output", tag: "SCFHS" },
+    { text: "Dark yellow urine", tag: "NCLEX" },
+    { text: "Mild peripheral edema", tag: "STR" },
+    { text: "Urine specific gravity 1.020", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Oliguria indicates worsening renal perfusion or failure, a serious complication of sickle cell disease.",
+    distractors: {
+      NCLEX: "Concentrated urine may reflect dehydration.",
+      STR: "Mild edema can occur.",
+      SAFE_DELAY: "Specific gravity is within normal range."
+    }
+  }
+},
+{
+  q: "49. Which nursing intervention best helps prevent leg ulcers in clients with sickle cell disease?",
+  options: [
+    { text: "Promote adequate hydration", tag: "SCFHS" },
+    { text: "Apply compression stockings", tag: "SAFE_DELAY" },
+    { text: "Limit ambulation", tag: "STR" },
+    { text: "Administer prophylactic antibiotics", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Hydration improves circulation and tissue oxygenation, reducing ulcer formation.",
+    distractors: {
+      SAFE_DELAY: "Compression may impair circulation.",
+      STR: "Activity promotes circulation.",
+      NCLEX: "Antibiotics do not prevent ulcers."
+    }
+  }
+},
+{
+  q: "50. A client with sickle cell disease is receiving hydroxyurea therapy. Which outcome indicates the medication is effective?",
+  options: [
+    { text: "Decreased frequency of pain crises", tag: "SCFHS" },
+    { text: "Increased platelet count", tag: "SAFE_DELAY" },
+    { text: "Immediate rise in hemoglobin", tag: "STR" },
+    { text: "Elimination of anemia", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Hydroxyurea increases fetal hemoglobin and reduces vaso-occlusive episodes.",
+    distractors: {
+      SAFE_DELAY: "Platelet count is unrelated.",
+      STR: "Hemoglobin rises gradually.",
+      NCLEX: "Anemia is chronic."
+    }
+  }
+},
+{
+  q: "51. Which sign indicates possible heart failure in a client with sickle cell disease?",
+  options: [
+    { text: "Shortness of breath on exertion", tag: "SCFHS" },
+    { text: "Mild fatigue", tag: "SAFE_DELAY" },
+    { text: "Occasional dizziness", tag: "STR" },
+    { text: "Decreased appetite", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Chronic anemia can strain the heart, leading to symptoms of heart failure such as dyspnea.",
+    distractors: {
+      SAFE_DELAY: "Fatigue is common but nonspecific.",
+      STR: "Dizziness has many causes.",
+      NCLEX: "Appetite changes are indirect."
+    }
+  }
+},
+{
+  q: "52. A nurse is monitoring for complications of frequent blood transfusions in a client with sickle cell disease. Which complication is most likely?",
+  options: [
+    { text: "Iron overload", tag: "SCFHS" },
+    { text: "Vitamin B12 deficiency", tag: "SAFE_DELAY" },
+    { text: "Hypocalcemia", tag: "STR" },
+    { text: "Leukopenia", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Repeated transfusions can cause excess iron deposition in organs.",
+    distractors: {
+      SAFE_DELAY: "B12 deficiency is unrelated.",
+      STR: "Calcium levels are unaffected.",
+      NCLEX: "WBC count is not directly impacted."
+    }
+  }
+},
+{
+  q: "53. Which finding suggests avascular necrosis in a client with sickle cell disease?",
+  options: [
+    { text: "Chronic hip pain and limited range of motion", tag: "SCFHS" },
+    { text: "Acute abdominal pain", tag: "SAFE_DELAY" },
+    { text: "Chest tightness with fever", tag: "STR" },
+    { text: "Dark-colored urine", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Repeated ischemia to bones commonly affects the femoral head, causing chronic pain and stiffness.",
+    distractors: {
+      SAFE_DELAY: "Abdominal pain suggests splenic issues.",
+      STR: "Chest symptoms suggest acute chest syndrome.",
+      NCLEX: "Dark urine indicates hemolysis."
+    }
+  }
+},
+{
+  q: "54. A client with sickle cell disease asks why regular eye exams are needed. What is the best explanation?",
+  options: [
+    { text: "To detect retinal damage from vaso-occlusion", tag: "SCFHS" },
+    { text: "To monitor for glaucoma only", tag: "SAFE_DELAY" },
+    { text: "To assess visual acuity changes from anemia", tag: "STR" },
+    { text: "To prevent cataracts", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Sickle cell disease can cause retinopathy due to impaired blood flow.",
+    distractors: {
+      SAFE_DELAY: "Glaucoma is not the primary concern.",
+      STR: "Visual acuity alone is insufficient.",
+      NCLEX: "Cataracts are unrelated."
+    }
+  }
+},
+{
+  q: "55. Which statement by a client with sickle cell disease indicates effective self-management?",
+  options: [
+    { text: "I seek medical care immediately when I develop a fever", tag: "SCFHS" },
+    { text: "I stop my medications when I feel better", tag: "SAFE_DELAY" },
+    { text: "I avoid drinking fluids at night", tag: "STR" },
+    { text: "I only attend follow-up visits during crises", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Prompt evaluation of fever reduces mortality from infection.",
+    distractors: {
+      SAFE_DELAY: "Stopping meds increases risk.",
+      STR: "Fluid restriction is harmful.",
+      NCLEX: "Ongoing follow-up is essential."
+    }
+  }
+},
+{
+  q: "56. A pregnant client with preeclampsia is receiving magnesium sulfate. Which assessment finding requires IMMEDIATE nursing action?",
+  options: [
+    { text: "Respiratory rate of 10 per minute", tag: "SCFHS" },
+    { text: "Warm flushed skin", tag: "SAFE_DELAY" },
+    { text: "Urinary output of 40 mL/hr", tag: "NCLEX" },
+    { text: "Mild headache", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Respiratory depression is a sign of magnesium toxicity and is life-threatening.",
+    distractors: {
+      SAFE_DELAY: "Flushing is an expected effect.",
+      NCLEX: "Urine output is adequate.",
+      STR: "Headache is common in preeclampsia."
+    }
+  }
+},
+{
+  q: "57. A client in labor with diabetes is receiving IV insulin. Which finding indicates the insulin is effective?",
+  options: [
+    { text: "Blood glucose maintained between 70–110 mg/dL", tag: "SCFHS" },
+    { text: "Increased fetal movement", tag: "SAFE_DELAY" },
+    { text: "Decreased maternal appetite", tag: "STR" },
+    { text: "Mild maternal hypoglycemia", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Maintaining euglycemia reduces fetal complications.",
+    distractors: {
+      SAFE_DELAY: "Fetal movement alone is nonspecific.",
+      STR: "Appetite changes are unrelated.",
+      NCLEX: "Hypoglycemia is not therapeutic."
+    }
+  }
+},
+{
+  q: "58. A diabetic pregnant client has an amniocentesis showing an L/S ratio of 1:1 with phosphatidylglycerol present. What is the nurse’s interpretation?",
+  options: [
+    { text: "The fetus has mature lungs", tag: "SCFHS" },
+    { text: "The fetus is at risk for hypoglycemia", tag: "SAFE_DELAY" },
+    { text: "The fetus is at risk for neural tube defects", tag: "STR" },
+    { text: "The fetus has delayed skeletal maturity", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Presence of phosphatidylglycerol indicates lung maturity even if L/S ratio is low.",
+    distractors: {
+      SAFE_DELAY: "Hypoglycemia is unrelated to lung maturity.",
+      STR: "Neural tube defects are not assessed this way.",
+      NCLEX: "Skeletal maturity is unrelated."
+    }
+  }
+},
+{
+  q: "59. A newborn of a diabetic mother exhibits jitteriness shortly after birth. What is the PRIORITY nursing action?",
+  options: [
+    { text: "Check the newborn’s blood glucose level", tag: "SCFHS" },
+    { text: "Swaddle the newborn", tag: "SAFE_DELAY" },
+    { text: "Document the finding", tag: "STR" },
+    { text: "Notify the pediatrician immediately", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Jitteriness is a sign of neonatal hypoglycemia requiring immediate assessment.",
+    distractors: {
+      SAFE_DELAY: "Comfort does not address cause.",
+      STR: "Documentation alone delays care.",
+      NCLEX: "Assessment precedes notification."
+    }
+  }
+},
+{
+  q: "60. Which assessment finding indicates magnesium sulfate toxicity in a laboring client?",
+  options: [
+    { text: "Absent deep tendon reflexes", tag: "SCFHS" },
+    { text: "Blood pressure of 140/90", tag: "SAFE_DELAY" },
+    { text: "Nausea", tag: "STR" },
+    { text: "Warm extremities", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Loss of reflexes is an early and critical sign of magnesium toxicity.",
+    distractors: {
+      SAFE_DELAY: "BP elevation relates to preeclampsia.",
+      STR: "Nausea is common.",
+      NCLEX: "Warmth is expected."
+    }
+  }
+},
+{
+  q: "61. A client develops hypotension following epidural anesthesia. What is the nurse’s FIRST action?",
+  options: [
+    { text: "Increase the IV fluid rate", tag: "SCFHS" },
+    { text: "Place the client in Trendelenburg position", tag: "NCLEX" },
+    { text: "Stop the epidural infusion", tag: "SAFE_DELAY" },
+    { text: "Administer vasopressors", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "IV fluids correct vasodilation caused by epidural anesthesia.",
+    distractors: {
+      NCLEX: "Positioning is secondary.",
+      SAFE_DELAY: "Stopping infusion is not first-line.",
+      STR: "Medications are not first action."
+    }
+  }
+},
+{
+  q: "62. A client with pancreatic cancer is at highest risk for which nursing problem?",
+  options: [
+    { text: "Imbalanced nutrition: less than body requirements", tag: "SCFHS" },
+    { text: "Impaired skin integrity", tag: "SAFE_DELAY" },
+    { text: "Chronic confusion", tag: "STR" },
+    { text: "Urinary retention", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Pancreatic cancer interferes with digestion and nutrient absorption.",
+    distractors: {
+      SAFE_DELAY: "Skin integrity is secondary.",
+      STR: "Confusion is not primary.",
+      NCLEX: "Urinary issues are unrelated."
+    }
+  }
+},
+{
+  q: "63. A client with uremic frost is most likely experiencing which condition?",
+  options: [
+    { text: "End-stage renal failure", tag: "SCFHS" },
+    { text: "Liver cirrhosis", tag: "SAFE_DELAY" },
+    { text: "Severe anemia", tag: "STR" },
+    { text: "Hyperparathyroidism", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Uremic frost occurs when high urea levels crystallize on the skin in renal failure.",
+    distractors: {
+      SAFE_DELAY: "Liver disease causes jaundice.",
+      STR: "Anemia does not cause frost.",
+      NCLEX: "Parathyroid disease is unrelated."
+    }
+  }
+},
+{
+  q: "64. A trauma client presents with BP 80/34, pulse 120. What is the PRIORITY nursing diagnosis?",
+  options: [
+    { text: "Fluid volume deficit", tag: "SCFHS" },
+    { text: "Ineffective airway clearance", tag: "SAFE_DELAY" },
+    { text: "Altered sensory perception", tag: "STR" },
+    { text: "Risk for infection", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Hypotension and tachycardia indicate hypovolemic shock.",
+    distractors: {
+      SAFE_DELAY: "Airway is not indicated as compromised.",
+      STR: "Sensory changes are secondary.",
+      NCLEX: "Infection is not immediate."
+    }
+  }
+},
+{
+  q: "65. An 18-year-old with osteogenesis imperfecta reports playing football. What is the nurse’s BEST response?",
+  options: [
+    { text: "Discuss risks of fractures and recommend safer activities", tag: "SCFHS" },
+    { text: "Document the statement", tag: "SAFE_DELAY" },
+    { text: "Encourage continued participation for fitness", tag: "STR" },
+    { text: "Refer to physical therapy only", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "OI causes fragile bones; injury prevention education is essential.",
+    distractors: {
+      SAFE_DELAY: "Documentation alone is insufficient.",
+      STR: "High-impact sports are dangerous.",
+      NCLEX: "PT referral does not address immediate risk."
+    }
+  }
+},
+{
+  q: "66. A client with a white blood cell count of 450 receives a basket of fresh fruit from visitors. What is the nurse’s BEST action?",
+  options: [
+    { text: "Ask the visitors to take the fruit home", tag: "SCFHS" },
+    { text: "Wash the fruit thoroughly for the client", tag: "NCLEX" },
+    { text: "Place the fruit at the bedside", tag: "SAFE_DELAY" },
+    { text: "Allow the client to eat peeled fruit only", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Severely immunocompromised clients should avoid fresh fruits due to infection risk.",
+    distractors: {
+      NCLEX: "Washing does not eliminate all pathogens.",
+      SAFE_DELAY: "Exposure risk remains.",
+      STR: "Peeling does not ensure safety."
+    }
+  }
+},
+{
+  q: "67. A post-laryngectomy client suddenly becomes pale, hypotensive, and unresponsive. What is the nurse’s FIRST action?",
+  options: [
+    { text: "Increase the IV infusion of normal saline", tag: "SCFHS" },
+    { text: "Place the client in Trendelenburg position", tag: "NCLEX" },
+    { text: "Administer atropine IV", tag: "STR" },
+    { text: "Call a code blue", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Signs indicate hypovolemic shock; restoring circulation is priority.",
+    distractors: {
+      NCLEX: "Positioning alone is insufficient.",
+      STR: "Medication is not first-line.",
+      SAFE_DELAY: "Immediate intervention precedes calling a code."
+    }
+  }
+},
+{
+  q: "68. A client accidentally pulls out a chest tube. What should the nurse do IMMEDIATELY?",
+  options: [
+    { text: "Cover the insertion site with a Vaseline gauze", tag: "SCFHS" },
+    { text: "Reinsert the chest tube", tag: "STR" },
+    { text: "Call the physician", tag: "NCLEX" },
+    { text: "Obtain a chest x-ray", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Occlusive dressing prevents air from entering the pleural space.",
+    distractors: {
+      STR: "Nurses do not reinsert chest tubes.",
+      NCLEX: "Airway protection comes first.",
+      SAFE_DELAY: "Imaging delays life-saving care."
+    }
+  }
+},
+{
+  q: "69. A client receiving warfarin has a prothrombin time of 120 seconds. What is the PRIORITY nursing action?",
+  options: [
+    { text: "Assess for signs of abnormal bleeding", tag: "SCFHS" },
+    { text: "Increase the warfarin dose", tag: "STR" },
+    { text: "Teach the client about vitamin K", tag: "NCLEX" },
+    { text: "Document the lab value", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Excessive anticoagulation places the client at high risk for bleeding.",
+    distractors: {
+      STR: "Dose should not be increased.",
+      NCLEX: "Teaching is secondary.",
+      SAFE_DELAY: "Assessment cannot be delayed."
+    }
+  }
+},
+{
+  q: "70. Which food selection provides the highest calcium content for a pregnant client?",
+  options: [
+    { text: "A cup of yogurt", tag: "SCFHS" },
+    { text: "A bran muffin", tag: "SAFE_DELAY" },
+    { text: "A granola bar", tag: "STR" },
+    { text: "A glass of fruit juice", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Dairy products are the richest sources of dietary calcium.",
+    distractors: {
+      SAFE_DELAY: "Grains contain minimal calcium.",
+      STR: "Granola is not calcium-rich.",
+      NCLEX: "Fruit juice contains little calcium."
+    }
+  }
+},
+{
+  q: "71. A client with preeclampsia is receiving magnesium sulfate. Which nursing action best demonstrates awareness of magnesium toxicity?",
+  options: [
+    { text: "Keeping calcium gluconate readily available", tag: "SCFHS" },
+    { text: "Performing vaginal exams every hour", tag: "STR" },
+    { text: "Encouraging ambulation", tag: "SAFE_DELAY" },
+    { text: "Limiting oral fluids", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Calcium gluconate is the antidote for magnesium toxicity.",
+    distractors: {
+      STR: "Exams increase infection risk.",
+      SAFE_DELAY: "Ambulation may be unsafe.",
+      NCLEX: "Fluid restriction is unrelated."
+    }
+  }
+},
+{
+  q: "72. What size catheter is most appropriate for administering a blood transfusion to a 6-year-old child?",
+  options: [
+    { text: "22-gauge", tag: "SCFHS" },
+    { text: "18-gauge", tag: "STR" },
+    { text: "16-gauge", tag: "SAFE_DELAY" },
+    { text: "14-gauge", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "A 22-gauge catheter safely allows transfusion in pediatric clients.",
+    distractors: {
+      STR: "Larger gauges may damage veins.",
+      SAFE_DELAY: "Too large for pediatric use.",
+      NCLEX: "Excessively large and unsafe."
+    }
+  }
+},
+{
+  q: "73. A client admitted after facial burns is at highest risk for which complication?",
+  options: [
+    { text: "Laryngeal edema", tag: "SCFHS" },
+    { text: "Hypovolemia", tag: "NCLEX" },
+    { text: "Hyperkalemia", tag: "STR" },
+    { text: "Hypernatremia", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Facial burns place the airway at risk due to swelling.",
+    distractors: {
+      NCLEX: "Volume loss occurs later.",
+      STR: "Electrolyte shifts are secondary.",
+      SAFE_DELAY: "Not immediate."
+    }
+  }
+},
+{
+  q: "74. Which behavior best indicates that a newly diagnosed diabetic client understands disease management?",
+  options: [
+    { text: "Demonstrates correct insulin injection technique", tag: "SCFHS" },
+    { text: "Requests educational brochures", tag: "SAFE_DELAY" },
+    { text: "Can state normal glucose values", tag: "NCLEX" },
+    { text: "Selects meals from the hospital menu", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Correct insulin administration demonstrates applied knowledge.",
+    distractors: {
+      SAFE_DELAY: "Interest does not confirm mastery.",
+      NCLEX: "Knowledge without skill is incomplete.",
+      STR: "Diet choice alone is insufficient."
+    }
+  }
+},
+{
+  q: "75. A client reports tingling and numbness in fingers after cast placement. What should the nurse do?",
+  options: [
+    { text: "Report the finding to the physician immediately", tag: "SCFHS" },
+    { text: "Elevate the extremity", tag: "NCLEX" },
+    { text: "Reassure the client", tag: "SAFE_DELAY" },
+    { text: "Apply warm compresses", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Paresthesia indicates neurovascular compromise and possible compartment syndrome.",
+    distractors: {
+      NCLEX: "Elevation alone may delay care.",
+      SAFE_DELAY: "Reassurance is unsafe.",
+      STR: "Heat increases swelling."
+    }
+  }
+},
+{
+  q: "76. A client with chronic kidney disease is prescribed furosemide. Which finding best indicates the medication is effective?",
+  options: [
+    { text: "Decreased peripheral edema", tag: "SCFHS" },
+    { text: "Increased serum potassium", tag: "STR" },
+    { text: "Decreased blood urea nitrogen", tag: "SAFE_DELAY" },
+    { text: "Increased hemoglobin level", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Reduction in edema indicates effective diuresis.",
+    distractors: {
+      STR: "Potassium is usually decreased.",
+      SAFE_DELAY: "BUN changes are indirect.",
+      NCLEX: "Hemoglobin is unrelated."
+    }
+  }
+},
+{
+  q: "77. A client with a spinal cord injury at T6 is at risk for autonomic dysreflexia. Which sign should the nurse recognize as an early indicator?",
+  options: [
+    { text: "Sudden severe hypertension", tag: "SCFHS" },
+    { text: "Hypotension", tag: "STR" },
+    { text: "Bradycardia with hypothermia", tag: "SAFE_DELAY" },
+    { text: "Respiratory depression", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Acute hypertension is a hallmark of autonomic dysreflexia.",
+    distractors: {
+      STR: "Blood pressure increases, not decreases.",
+      SAFE_DELAY: "Temperature change is not primary.",
+      NCLEX: "Respiratory changes are secondary."
+    }
+  }
+},
+{
+  q: "78. A client receiving total parenteral nutrition (TPN) suddenly develops dyspnea and chest pain. What is the nurse’s PRIORITY action?",
+  options: [
+    { text: "Clamp the TPN line immediately", tag: "SCFHS" },
+    { text: "Lower the head of the bed", tag: "STR" },
+    { text: "Flush the catheter with saline", tag: "SAFE_DELAY" },
+    { text: "Notify the physician after assessment", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Symptoms suggest air embolism; stopping infusion prevents further air entry.",
+    distractors: {
+      STR: "Head should be elevated or left lateral.",
+      SAFE_DELAY: "Flushing may worsen embolism.",
+      NCLEX: "Immediate action precedes notification."
+    }
+  }
+},
+{
+  q: "79. Which instruction is MOST important for a client prescribed nitroglycerin sublingual tablets?",
+  options: [
+    { text: "Sit down before taking the medication", tag: "SCFHS" },
+    { text: "Take the medication with meals", tag: "STR" },
+    { text: "Store tablets in a pill organizer", tag: "SAFE_DELAY" },
+    { text: "Chew the tablet for faster effect", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Nitroglycerin can cause hypotension and dizziness.",
+    distractors: {
+      STR: "Meals are unrelated.",
+      SAFE_DELAY: "Improper storage reduces potency.",
+      NCLEX: "Tablets must dissolve under the tongue."
+    }
+  }
+},
+{
+  q: "80. A postoperative client has not voided for 8 hours. What should the nurse do FIRST?",
+  options: [
+    { text: "Assess bladder distention", tag: "SCFHS" },
+    { text: "Insert a urinary catheter", tag: "STR" },
+    { text: "Notify the physician", tag: "SAFE_DELAY" },
+    { text: "Encourage increased oral fluids", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Assessment determines urinary retention before intervention.",
+    distractors: {
+      STR: "Catheterization requires assessment.",
+      SAFE_DELAY: "Notification is premature.",
+      NCLEX: "Fluids may worsen retention."
+    }
+  }
+},
+{
+  q: "81. A client with heart failure reports sudden weight gain of 2 kg in 2 days. What is the nurse’s BEST response?",
+  options: [
+    { text: "Report the finding to the healthcare provider", tag: "SCFHS" },
+    { text: "Reassure the client", tag: "SAFE_DELAY" },
+    { text: "Advise increased physical activity", tag: "STR" },
+    { text: "Schedule a follow-up visit", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Rapid weight gain indicates fluid retention and worsening heart failure.",
+    distractors: {
+      SAFE_DELAY: "Reassurance delays treatment.",
+      STR: "Activity may worsen symptoms.",
+      NCLEX: "Immediate reporting is required."
+    }
+  }
+},
+{
+  q: "82. Which assessment finding is MOST concerning in a client receiving opioid analgesics?",
+  options: [
+    { text: "Respiratory rate of 8 breaths per minute", tag: "SCFHS" },
+    { text: "Constipation", tag: "SAFE_DELAY" },
+    { text: "Nausea", tag: "NCLEX" },
+    { text: "Mild drowsiness", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Respiratory depression is a life-threatening adverse effect.",
+    distractors: {
+      SAFE_DELAY: "Constipation is expected.",
+      NCLEX: "Nausea is common.",
+      STR: "Drowsiness is anticipated."
+    }
+  }
+},
+{
+  q: "83. A client with tuberculosis is placed in isolation. Which precaution is required?",
+  options: [
+    { text: "Airborne precautions", tag: "SCFHS" },
+    { text: "Contact precautions", tag: "STR" },
+    { text: "Droplet precautions", tag: "NCLEX" },
+    { text: "Standard precautions only", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Tuberculosis spreads via airborne transmission.",
+    distractors: {
+      STR: "Contact is insufficient.",
+      NCLEX: "Droplet precautions are inadequate.",
+      SAFE_DELAY: "Standard precautions alone are unsafe."
+    }
+  }
+},
+{
+  q: "84. A client with hypoglycemia is conscious but confused. What is the nurse’s FIRST action?",
+  options: [
+    { text: "Administer oral glucose", tag: "SCFHS" },
+    { text: "Give IV insulin", tag: "STR" },
+    { text: "Start an IV line", tag: "SAFE_DELAY" },
+    { text: "Notify the physician", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Conscious clients can safely receive oral glucose.",
+    distractors: {
+      STR: "Insulin worsens hypoglycemia.",
+      SAFE_DELAY: "IV access delays treatment.",
+      NCLEX: "Immediate correction is priority."
+    }
+  }
+},
+{
+  q: "85. Which finding best indicates effective pain management in a postoperative client?",
+  options: [
+    { text: "Client reports pain score of 2 out of 10", tag: "SCFHS" },
+    { text: "Stable vital signs", tag: "NCLEX" },
+    { text: "Client is sleeping", tag: "SAFE_DELAY" },
+    { text: "No analgesics requested", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "The client’s self-report is the most reliable indicator of pain.",
+    distractors: {
+      NCLEX: "Vitals are indirect indicators.",
+      SAFE_DELAY: "Sleep does not equal comfort.",
+      STR: "Lack of request does not confirm relief."
+    }
+  }
+},
+{
+  q: "86. A client receiving heparin therapy develops bleeding gums. Which laboratory value should the nurse review FIRST?",
+  options: [
+    { text: "Activated partial thromboplastin time (aPTT)", tag: "SCFHS" },
+    { text: "Prothrombin time (PT)", tag: "STR" },
+    { text: "International normalized ratio (INR)", tag: "NCLEX" },
+    { text: "Platelet count", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "aPTT monitors therapeutic and toxic effects of heparin.",
+    distractors: {
+      STR: "PT evaluates warfarin therapy.",
+      NCLEX: "INR is not used for heparin.",
+      SAFE_DELAY: "Platelets are secondary unless HIT is suspected."
+    }
+  }
+},
+{
+  q: "87. A client with a chest tube suddenly reports sharp chest pain and dyspnea. What should the nurse do FIRST?",
+  options: [
+    { text: "Check for disconnection or air leak", tag: "SCFHS" },
+    { text: "Administer prescribed analgesics", tag: "STR" },
+    { text: "Reposition the client", tag: "SAFE_DELAY" },
+    { text: "Notify the healthcare provider", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Sudden symptoms may indicate an air leak or dislodgement requiring immediate assessment.",
+    distractors: {
+      STR: "Pain control does not address the cause.",
+      SAFE_DELAY: "Repositioning may delay correction.",
+      NCLEX: "Assessment precedes notification."
+    }
+  }
+},
+{
+  q: "88. Which finding indicates effective treatment for pneumonia?",
+  options: [
+    { text: "Decreased crackles on lung auscultation", tag: "SCFHS" },
+    { text: "Increased white blood cell count", tag: "STR" },
+    { text: "Persistent productive cough", tag: "SAFE_DELAY" },
+    { text: "Respiratory rate of 28 breaths per minute", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Improved breath sounds reflect resolving infection.",
+    distractors: {
+      STR: "WBC should decrease.",
+      SAFE_DELAY: "Cough persistence suggests ongoing infection.",
+      NCLEX: "Tachypnea indicates respiratory distress."
+    }
+  }
+},
+{
+  q: "89. A client with liver cirrhosis develops confusion and asterixis. Which medication does the nurse anticipate?",
+  options: [
+    { text: "Lactulose", tag: "SCFHS" },
+    { text: "Furosemide", tag: "STR" },
+    { text: "Spironolactone", tag: "NCLEX" },
+    { text: "Morphine", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Lactulose reduces ammonia levels causing hepatic encephalopathy.",
+    distractors: {
+      STR: "Diuretics manage ascites, not encephalopathy.",
+      NCLEX: "Aldosterone antagonists do not lower ammonia.",
+      SAFE_DELAY: "Opioids worsen mental status."
+    }
+  }
+},
+{
+  q: "90. Which action is MOST important when administering blood transfusion?",
+  options: [
+    { text: "Verify client identity with another licensed nurse", tag: "SCFHS" },
+    { text: "Warm blood to room temperature", tag: "STR" },
+    { text: "Infuse over 1 hour", tag: "SAFE_DELAY" },
+    { text: "Monitor intake and output", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Proper identification prevents fatal transfusion reactions.",
+    distractors: {
+      STR: "Warming is not routine.",
+      SAFE_DELAY: "Rapid infusion increases risk.",
+      NCLEX: "Monitoring follows safety verification."
+    }
+  }
+},
+{
+  q: "91. A client suddenly develops chest pain radiating to the left arm with diaphoresis. What is the nurse’s PRIORITY action?",
+  options: [
+    { text: "Administer oxygen", tag: "SCFHS" },
+    { text: "Obtain a detailed pain history", tag: "SAFE_DELAY" },
+    { text: "Document findings", tag: "STR" },
+    { text: "Prepare for discharge teaching", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Suspected myocardial infarction requires immediate oxygen to reduce ischemia.",
+    distractors: {
+      SAFE_DELAY: "History collection delays treatment.",
+      STR: "Documentation is secondary.",
+      NCLEX: "Discharge is inappropriate."
+    }
+  }
+},
+{
+  q: "92. A client with diabetes reports shakiness, sweating, and hunger. Blood glucose is 52 mg/dL. What should the nurse do FIRST?",
+  options: [
+    { text: "Give 15 g of fast-acting carbohydrate", tag: "SCFHS" },
+    { text: "Administer insulin", tag: "STR" },
+    { text: "Start IV fluids", tag: "SAFE_DELAY" },
+    { text: "Notify the healthcare provider", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Immediate glucose administration corrects hypoglycemia.",
+    distractors: {
+      STR: "Insulin worsens hypoglycemia.",
+      SAFE_DELAY: "IV access delays treatment.",
+      NCLEX: "Provider notification follows stabilization."
+    }
+  }
+},
+{
+  q: "93. Which client is at highest risk for developing pressure injuries?",
+  options: [
+    { text: "Immobile client with incontinence", tag: "SCFHS" },
+    { text: "Client with controlled hypertension", tag: "SAFE_DELAY" },
+    { text: "Ambulatory client post-surgery", tag: "STR" },
+    { text: "Client receiving oral antibiotics", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Immobility and moisture significantly increase skin breakdown risk.",
+    distractors: {
+      SAFE_DELAY: "Hypertension alone is not a risk.",
+      STR: "Mobility reduces risk.",
+      NCLEX: "Antibiotics do not affect skin integrity."
+    }
+  }
+},
+{
+  q: "94. A client on droplet precautions requires transport to radiology. What action should the nurse take?",
+  options: [
+    { text: "Place a surgical mask on the client", tag: "SCFHS" },
+    { text: "Use an N95 respirator", tag: "STR" },
+    { text: "Cancel the procedure", tag: "SAFE_DELAY" },
+    { text: "Remove precautions during transport", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Masking the client prevents droplet transmission.",
+    distractors: {
+      STR: "N95 is for airborne precautions.",
+      SAFE_DELAY: "Procedures should continue with precautions.",
+      NCLEX: "Precautions must be maintained."
+    }
+  }
+},
+{
+  q: "95. Which outcome best indicates successful fluid resuscitation in a client with hypovolemic shock?",
+  options: [
+    { text: "Urine output ≥ 30 mL/hour", tag: "SCFHS" },
+    { text: "Heart rate of 110 bpm", tag: "STR" },
+    { text: "Cool extremities", tag: "SAFE_DELAY" },
+    { text: "Decreased hemoglobin", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Adequate urine output reflects improved renal perfusion.",
+    distractors: {
+      STR: "Tachycardia suggests ongoing shock.",
+      SAFE_DELAY: "Cool extremities indicate poor perfusion.",
+      NCLEX: "Hemoglobin changes are not immediate indicators."
+    }
+  }
+},
+{
+  q: "96. A patient in the ER after chemical exposure shows sudden respiratory distress, facial swelling, and stridor. What is the FIRST intervention?",
+  options: [
+    { text: "Establish airway immediately and call for rapid response", tag: "SCFHS" },
+    { text: "Administer IV corticosteroids only", tag: "NCLEX" },
+    { text: "Document incident and monitor vitals", tag: "SAFE_DELAY" },
+    { text: "Move patient to isolation room", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Airway compromise from chemical exposure is life-threatening; securing airway is priority.",
+    distractors: {
+      NCLEX: "Steroids alone are insufficient for immediate threat.",
+      SAFE_DELAY: "Documentation does not protect airway.",
+      STR: "Isolation does not address airway compromise."
+    }
+  }
+},
+{
+  q: "97. A postoperative client reports calf pain and swelling. What is the nurse’s PRIORITY action?",
+  options: [
+    { text: "Keep the client on bed rest and notify the provider", tag: "SCFHS" },
+    { text: "Massage the affected leg", tag: "STR" },
+    { text: "Apply warm compresses", tag: "SAFE_DELAY" },
+    { text: "Encourage ambulation", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Findings suggest DVT; mobilization may cause embolization.",
+    distractors: {
+      STR: "Massage increases embolus risk.",
+      SAFE_DELAY: "Heat may worsen clot movement.",
+      NCLEX: "Ambulation is contraindicated."
+    }
+  }
+},
+{
+  q: "98. Which assessment best evaluates oxygenation status?",
+  options: [
+    { text: "Pulse oximetry reading", tag: "SCFHS" },
+    { text: "Blood pressure measurement", tag: "STR" },
+    { text: "Capillary refill", tag: "SAFE_DELAY" },
+    { text: "Heart rate", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Pulse oximetry directly measures oxygen saturation.",
+    distractors: {
+      STR: "Blood pressure reflects circulation.",
+      SAFE_DELAY: "Capillary refill indicates perfusion.",
+      NCLEX: "Heart rate is indirect."
+    }
+  }
+},
+{
+  q: "99. A client with asthma uses an inhaled corticosteroid daily. Which instruction is MOST important?",
+  options: [
+    { text: "Rinse mouth after use", tag: "SCFHS" },
+    { text: "Use only during attacks", tag: "STR" },
+    { text: "Take with food", tag: "SAFE_DELAY" },
+    { text: "Limit fluid intake", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Rinsing prevents oral candidiasis.",
+    distractors: {
+      STR: "Steroids are maintenance therapy.",
+      SAFE_DELAY: "Food intake is irrelevant.",
+      NCLEX: "Fluids are not restricted."
+    }
+  }
+},
+{
+  q: "100. Which statement best demonstrates understanding of discharge teaching after myocardial infarction?",
+  options: [
+    { text: "I will stop activity if chest pain occurs", tag: "SCFHS" },
+    { text: "I can resume strenuous exercise immediately", tag: "STR" },
+    { text: "I will ignore mild chest discomfort", tag: "SAFE_DELAY" },
+    { text: "Medications are optional once I feel better", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Recognizing warning symptoms and stopping activity prevents reinfarction.",
+    distractors: {
+      STR: "Strenuous activity is restricted.",
+      SAFE_DELAY: "Chest discomfort must be evaluated.",
+      NCLEX: "Medication adherence is essential."
     }
   }
 }
